@@ -1,10 +1,38 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, Linking, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Map, { Callout, Marker } from 'react-native-maps';
 
 export default function App() {
   const coordinate = {
     latitude: -23.561247393962343,
     longitude: -46.656661925026796,
+  };
+
+  async function handleOpenMap() {
+    const scheme = Platform.select({
+      ios: "maps://0,0?q=",
+      android: "geo:0,0?q=",
+    });
+
+    const { latitude, longitude } = coordinate;
+    const LatLgn = `${latitude}, ${longitude}`;
+    const label = "Loja do Ricardo";
+
+    const url = Platform.select({
+      ios: `${scheme} ${label} @${LatLgn}`,
+      android: `${scheme} ${LatLgn} (${label})`
+    });
+
+    if (!url) {
+      return Alert.alert("Não foi possível abrir o mapa.");
+    };
+
+    const canOpen = await Linking.canOpenURL(url);
+
+    if (!canOpen) {
+      return Alert.alert("Não foi possível abrir o mapa.");
+    };
+
+    Linking.openURL(url);
   };
 
   return (
@@ -27,6 +55,14 @@ export default function App() {
           </Callout>
         </Marker>
       </Map>
+
+      <TouchableOpacity
+        activeOpacity={0.8}
+        style={styles.button}
+        onPress={handleOpenMap}
+      >
+        <Text style={styles.buttonTitle}>Como chegar</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -44,5 +80,22 @@ const styles = StyleSheet.create({
   },
   address: {
     fontSize: 14,
+  },
+  button: {
+    // flex: 1,
+    height: 56,
+    backgroundColor: '#000',
+    position: 'absolute',
+    bottom: 24,
+    left: 24,
+    right: 24,
+    borderRadius: 7,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonTitle: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: 'bold',
   }
 });
