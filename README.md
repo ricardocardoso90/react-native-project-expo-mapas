@@ -35,7 +35,7 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
 
 ## Executando o Projeto
 
-1. Inicie o servidor de desenvolvimento::
+1. Inicie o servidor de desenvolvimento:
 
    ```bash
    npm start
