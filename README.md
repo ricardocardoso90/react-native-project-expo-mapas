@@ -28,3 +28,13 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
 
    ```bash
    git clone https://github.com/ricardocardoso90/react-native-project-expo-mapas.git
+
+
+## ▶️ Executando o Projeto
+
+1. Inicie o servidor de desenvolvimento::
+
+   ```bash
+   npm start
+   # ou
+   yarn start
