@@ -1,8 +1,8 @@
-# 🗺️ Projeto: Mapas com React Native e Expo
+# Projeto: Mapas com React Native e Expo
 
 Este projeto demonstra como implementar mapas interativos em um aplicativo React Native utilizando **Expo** e a biblioteca **react-native-maps**. Ele permite exibir a localização atual do usuário, adicionar marcadores personalizados e integrar com aplicativos de navegação por meio do **Linking API**.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev/)
@@ -11,19 +11,19 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
 - [React Native Linking API](https://reactnative.dev/docs/linking)
 - [Platform API](https://reactnative.dev/docs/platform)
 
-## 🧰 Funcionalidades
+## Funcionalidades
 
-- 📍 Exibição da localização atual do usuário.
+- Exibição da localização atual do usuário.
 
-- 🗺️ Adição de marcadores personalizados no mapa.
+- Adição de marcadores personalizados no mapa.
 
-- 🔗 Integração com aplicativos de navegação (Google Maps, Waze) via Linking API.
+- Integração com aplicativos de navegação (Google Maps, Waze) via Linking API.
 
-- 📱 Compatibilidade com Android e iOS.
+- Compatibilidade com Android e iOS.
 
-- 🧭 Detecção de plataforma para comportamentos específicos.
+- Detecção de plataforma para comportamentos específicos.
 
-## 📦 Instalação
+## Instalação
 
 1. Instale as dependências:
 
@@ -33,7 +33,7 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
    yarn install
    ```
 
-## ▶️ Executando o Projeto
+## Executando o Projeto
 
 1. Inicie o servidor de desenvolvimento::
 
