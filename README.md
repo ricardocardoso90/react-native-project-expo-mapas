@@ -12,6 +12,7 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
 - [Platform API](https://reactnative.dev/docs/platform)
 
 ## 🧰 Funcionalidades
+
 - 📍 Exibição da localização atual do usuário.
 
 - 🗺️ Adição de marcadores personalizados no mapa.
@@ -24,11 +25,13 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
 
 ## 📦 Instalação
 
-1. Clone o repositório:
+1. Instale as dependências:
 
    ```bash
-   git clone https://github.com/ricardocardoso90/react-native-project-expo-mapas.git
-
+   npm install
+   # ou
+   yarn install
+   ```
 
 ## ▶️ Executando o Projeto
 
@@ -38,3 +41,4 @@ Este projeto demonstra como implementar mapas interativos em um aplicativo React
    npm start
    # ou
    yarn start
+   ```
