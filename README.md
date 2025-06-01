@@ -1,19 +1,30 @@
-## Projeto: Mapas
+# 🗺️ Projeto: Mapas com React Native e Expo
 
-**Tecnologias utilizadas:**
+Este projeto demonstra como implementar mapas interativos em um aplicativo React Native utilizando **Expo** e a biblioteca **react-native-maps**. Ele permite exibir a localização atual do usuário, adicionar marcadores personalizados e integrar com aplicativos de navegação por meio do **Linking API**.
 
-- [Expo]()
-- [Typescript]()
-- [React Native]()
-- [React Native Maps]()
-- [React Native Linking API]()
-- [Platform API]()
+## 🚀 Tecnologias Utilizadas
 
-## Instalação:
+- [Expo](https://expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Native Maps](https://github.com/react-native-maps/react-native-maps)
+- [React Native Linking API](https://reactnative.dev/docs/linking)
+- [Platform API](https://reactnative.dev/docs/platform)
 
-- `npx create-expo-app@latest`
-- `npm i ou npm install`
+## 🧰 Funcionalidades
+- 📍 Exibição da localização atual do usuário.
 
-## Para rodar:
+- 🗺️ Adição de marcadores personalizados no mapa.
 
-- `npm start`
+- 🔗 Integração com aplicativos de navegação (Google Maps, Waze) via Linking API.
+
+- 📱 Compatibilidade com Android e iOS.
+
+- 🧭 Detecção de plataforma para comportamentos específicos.
+
+## 📦 Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/ricardocardoso90/react-native-project-expo-mapas.git
