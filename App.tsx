@@ -1,5 +1,5 @@
-import { Alert, Linking, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Map, { Callout, Marker } from 'react-native-maps';
+import { Alert, Linking, Platform, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   const coordinate = {
@@ -22,21 +22,16 @@ export default function App() {
       android: `${scheme} ${LatLgn} (${label})`
     });
 
-    if (!url) {
-      return Alert.alert("Não foi possível abrir o mapa.");
-    };
-
+    if (!url) { return Alert.alert("Não foi possível abrir o mapa."); };
     const canOpen = await Linking.canOpenURL(url);
 
-    if (!canOpen) {
-      return Alert.alert("Não foi possível abrir o mapa.");
-    };
-
+    if (!canOpen) { return Alert.alert("Não foi possível abrir o mapa."); };
     Linking.openURL(url);
   };
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle='light-content' />
       <Map
         style={StyleSheet.absoluteFill}
         initialRegion={{
